@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Elements with Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    #content {
+      transition: all 0.3s;
+    }
+
+    #toggle:checked ~ #content {
+      max-height: 500px;
+      overflow: hidden;
+    }
+
+    #toggle:checked ~ #content.d-none {
+      max-height: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <input id="toggle" type="checkbox" class="d-none">
+        <label for="toggle" class="btn btn-primary">Toggle Content</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="content" class="d-none">
+          <p>This is the content that will be hidden or shown.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+		  <!-- <nav aria-label="Page navigation example">
+			<ul class="mt-3 pagination justify-content-center">
+			  <li class="input-group-addon input-group-btn">
+				<div class="btn-group-toggle" data-bs-toggle="buttons">
+				  <label class="btn btn-default active">
+					<input type="radio" name="viewMode" autocomplete="off" checked>
+					<a href="#" class="link-button-right">
+					  <i class="fa-solid fa-table-cells"></i>
+					</a>
+				  </label>
+				</div>
+			  </li>
+			  <li class="input-group-addon input-group-btn">
+				<div class="btn-group-toggle" data-bs-toggle="buttons">
+				  <label class="btn btn-default active">
+					<input type="radio" name="viewMode" autocomplete="off" checked>
+					<a href="#" class="link-button-right">
+						<i class="fa-solid fa-window-maximize"></i>
+					</a>
+				  </label>
+				</div>
+			  </li>
+			</ul>
+		  </nav> -->
+
+		  <!-- <nav aria-label="Page navigation example">
+			<ul class="mt-3 pagination justify-content-center">
+				<li class="page-item"><a class="page-link" href="#">
+					<i class="fa-solid fa-table-cells"></i></a>	
+			 	</li>
+				 <li class="page-item"><a class="page-link" href="#">
+					<i class="fa-solid fa-window-maximize"></i></a>
+				</li>
+			</ul>
+		  </nav> -->
+
+		  
+		  <!-- <nav aria-label="Page navigation example">
+			<ul class="mt-3 pagination justify-content-center">
+				<li class=""input-group-addon input-group-btn""><button type="button" class="btn active" data-bs-toggle="button" autocomplete="off" aria-pressed="true"><a href="#" class="link-button-right btn btn-default" type="button">
+					<i class="fa-solid fa-table-cells"></i></a>	</button>
+
+			 	</li>
+				 <li class=""input-group-addon input-group-btn""><button type="button" class="btn active" data-bs-toggle="button" autocomplete="off" ><a href="#" class="link-button-right btn btn-default" type="button">
+					<i class="fa-solid fa-window-maximize"></i></a></button>
+					
+				</li>
+			</ul>
+		  </nav> -->

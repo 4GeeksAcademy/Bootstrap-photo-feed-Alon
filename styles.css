@@ -1,3 +1,18 @@
 input[type=radio] {
     display: none;
 }
+
+label {
+    position: relative;
+  }
+
+img {
+    opacity: 1; /* Set initial opacity */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  }
+
+  /* Greying out effect on checked state */
+input[type="radio"]:checked + label img {
+    opacity: 0.5; /* Reduce the opacity to 0.5 */
+    pointer-events: none; /* Disable pointer events on the image */
+  }
