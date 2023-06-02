@@ -72,79 +72,159 @@
 
 			  </div>
 			</div>
-		  </nav>
+		</nav>
 
 		  <!-- grid - card view -->
 
-		  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-			<label class="btn" for="btnradio1"><a href="#" class="link-button-right">
-				<i class="fa-solid fa-table-cells"></i>
-			  </a></label>
-		  
-			<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-			<label class="btn" for="btnradio2"><a href="#" class="link-button-right">
-				<i class="fa-solid fa-window-maximize"></i>
-			</a></label>
-		  </div>
+			  <!-- Nav tabs -->
+		<ul class="nav nav-tabs mt-3 justify-content-center border border-0" id="myTab" role="tablist">
 
+			<li class="nav-item" role="presentation">
+				<button class="nav-link border border-0" id="grid-view" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-table-cells fa-xl"></i></button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active border border-0" id="card-view" data-bs-toggle="tab" data-bs-target="#card" type="button" role="tab" aria-controls="card" aria-selected="true"><i class="fa-solid fa-window-maximize fa-xl"></i></button>
+			</li>
+		</ul>
+		
+		<!-- Tab panes -->
+		<div class="tab-content">
 
-
-
-		  <!-- <nav aria-label="Page navigation example">
-			<ul class="mt-3 pagination justify-content-center">
-			  <li class="input-group-addon input-group-btn">
-				<div class="btn-group-toggle" data-bs-toggle="buttons">
-				  <label class="btn btn-default active">
-					<input type="radio" name="viewMode" autocomplete="off" checked>
-					<a href="#" class="link-button-right">
-					  <i class="fa-solid fa-table-cells"></i>
-					</a>
-				  </label>
+			<!-- Grid view -->
+			<div class="tab-pane" id="grid" role="tabpanel" aria-labelledby="grid-view" tabindex="0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col my-2">
+							<img src="Photos/moldova.jpg" class="img-fluid" alt="moldova">
+						</div>
+						<div class="col my-2">
+							<img src="Photos/Arais.jpg" class="img-fluid" alt="arais">
+						</div>
+						<div class="col my-2">
+							<img src="Photos/Beach.jpg" class="img-fluid" alt="beach">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col my-2">
+							<img src="Photos/Pizza.jpg" class="img-fluid" style="height: 100%;" alt="pizza">
+						</div>
+						<div class="col my-2">
+							<img src="Photos/Pasture.jpg" class="img-fluid" alt="Pasture">
+						</div>
+						<div class="col my-2">
+							<img src="Photos/Ushuaia.jpg" class="img-fluid" alt="Ushuaia">
+						</div>
+					</div>
 				</div>
-			  </li>
-			  <li class="input-group-addon input-group-btn">
-				<div class="btn-group-toggle" data-bs-toggle="buttons">
-				  <label class="btn btn-default active">
-					<input type="radio" name="viewMode" autocomplete="off" checked>
-					<a href="#" class="link-button-right">
-						<i class="fa-solid fa-window-maximize"></i>
-					</a>
-				  </label>
+			</div>
+
+
+			<!-- Card view -->
+			<div class="tab-pane active" id="card" role="tabpanel" aria-labelledby="card-view" tabindex="1">
+				<div class="container">
+					<div class="row my-4 justify-content-center">
+						<div class="card col-6 my-2">
+							<div class="card-title pt-2 d-flex justify-content-between"> 
+								<h3>Moldova</h3>
+								<h6>31/05</h6>
+							</div>
+							<img src="Photos/moldova.jpg" class="card-img-top" alt="moldova">
+							<div class="card-body">
+								<h5 class="card-title">9000 likes</h5>
+								<p class="card-text">This is my cat Muly, also known as Moldova, sleeping like a bagel.</p>	
+							</div>
+				 		 </div>
+					</div>
 				</div>
-			  </li>
-			</ul>
-		  </nav> -->
-
-		  <!-- <nav aria-label="Page navigation example">
-			<ul class="mt-3 pagination justify-content-center">
-				<li class="page-item"><a class="page-link" href="#">
-					<i class="fa-solid fa-table-cells"></i></a>	
-			 	</li>
-				 <li class="page-item"><a class="page-link" href="#">
-					<i class="fa-solid fa-window-maximize"></i></a>
-				</li>
-			</ul>
-		  </nav> -->
-
-		  
-		  <!-- <nav aria-label="Page navigation example">
-			<ul class="mt-3 pagination justify-content-center">
-				<li class=""input-group-addon input-group-btn""><button type="button" class="btn active" data-bs-toggle="button" autocomplete="off" aria-pressed="true"><a href="#" class="link-button-right btn btn-default" type="button">
-					<i class="fa-solid fa-table-cells"></i></a>	</button>
-
-			 	</li>
-				 <li class=""input-group-addon input-group-btn""><button type="button" class="btn active" data-bs-toggle="button" autocomplete="off" ><a href="#" class="link-button-right btn btn-default" type="button">
-					<i class="fa-solid fa-window-maximize"></i></a></button>
-					
-				</li>
-			</ul>
-		  </nav> -->
-		  <!-- grid view photos main body  -->
 
 
 
+				<div class="container my-3">
+					<div class="row my-4 justify-content-center">
+						<div class="card col-6 my-3">
+							<div class="card-title pt-2 d-flex justify-content-between"> 
+								<h3>A Perfect Arais</h3>
+								<h6>30/05</h6>
+							</div>
+							<img src="Photos/Arais.jpg" class="card-img-top" alt="arais">
+							<div class="card-body">
+								<h5 class="card-title">100 likes</h5>
+								<p class="card-text">And now i'm hungry.</p>	
+							</div>
+				 		 </div>
+					</div>
+				</div>
 
+
+				<div class="container my-3">
+					<div class="row my-4 justify-content-center">
+						<div class="card col-6 my-3">
+							<div class="card-title pt-2 d-flex justify-content-between"> 
+								<h3>Beach in San Andreas, Colombia</h3>
+								<h6>29/05</h6>
+							</div>
+							<img src="Photos/Beach.jpg" class="card-img-top" alt="Beach">
+							<div class="card-body">
+								<h5 class="card-title">68 likes</h5>
+								<p class="card-text">What a nice and quiet beach.</p>	
+							</div>
+				 		 </div>
+					</div>
+				</div>
+
+
+				<div class="container my-3">
+					<div class="row my-4 justify-content-center">
+						<div class="card col-6 my-3">
+							<div class="card-title pt-2 d-flex justify-content-between"> 
+								<h3>Who doesn't love Pepperoni Pizza?</h3>
+								<h6>30/05</h6>
+							</div>
+							<img src="Photos/Pizza.jpg" class="card-img-top" style="height: 100%" alt="Pizza">
+							<div class="card-body">
+								<h5 class="card-title">99 likes</h5>
+								<p class="card-text">What a great looking pizza!</p>	
+							</div>
+				 		 </div>
+					</div>
+				</div>
+
+
+				<div class="container my-3">
+					<div class="row my-4 justify-content-center">
+						<div class="card col-6 my-3">
+							<div class="card-title pt-2 d-flex justify-content-between"> 
+								<h3>Pasture in a valley, Peru</h3>
+								<h6>28/05</h6>
+							</div>
+							<img src="Photos/Pasture.jpg" class="card-img-top" alt="pasture">
+							<div class="card-body">
+								<h5 class="card-title">5 likes</h5>
+								<p class="card-text">Pretty horse too.</p>	
+							</div>
+				 		 </div>
+					</div>
+				</div>
+
+				<div class="container my-3">
+					<div class="row my-4 justify-content-center">
+						<div class="card col-6 my-3">
+							<div class="card-title pt-2 d-flex justify-content-between"> 
+								<h3>Mountain Lake, Ushuaia</h3>
+								<h6>27/05</h6>
+							</div>
+							<img src="Photos/Ushuaia.jpg" class="card-img-top" alt="ushuaia">
+							<div class="card-body">
+								<h5 class="card-title">1 like</h5>
+								<p class="card-text">So pretty.</p>	
+							</div>
+				 		 </div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
 
 
 		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
